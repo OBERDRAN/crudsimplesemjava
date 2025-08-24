@@ -18,7 +18,7 @@ public class Main {
 		int idade;
 		
 		System.out.println("Nome: ");
-		nome = sc.next();
+		nome = sc.nextLine();
 		
 		System.out.println("Idade: ");
 		idade = sc.nextInt();
