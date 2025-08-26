@@ -19,7 +19,9 @@ public class ConnectionFactory {
 	public static Connection createConnectionToMySQL() throws Exception{
 		
 		//faz com que a classe seja carregada pela jvm
-		Class.forName("com.mysql.jdbc.Driver");
+		//Class.forName("com.mysql.jdbc.Driver");
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		
 		
 		//cria conexao com banco de dados
 		Connection connection = DriverManager.getConnection(DATABASE_URL,USERNAME,PASSWORD);
